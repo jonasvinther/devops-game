@@ -8,7 +8,9 @@ $(function() {
   var nextQuestionId = 0;
   var currentQuestion = null;
 
+
   function nextQuestion(questions) {
+    
     currentQuestion = questions[nextQuestionId];
 
     jQuery('#question').text(currentQuestion.question);
@@ -24,12 +26,24 @@ $(function() {
     money: 50
 
   }
+  
+  function gameOver() {
+    if(progresses.techdebt < 1) {
+      alert("Technical debt has grown over time, preventing any meaninful progress onwards")
+    } else if(progresses.devhappiness < 1) {
+      alert("Your developers has grown angry over time. You are left without any team")
+    } else if(progresses.features < 1) {
+      alert("You no longer have relevant features. Your competition has outgrown you.")
+    } else if (progresses.money < 1) {
+      alert("Your team is out of funding.")
+    }
+  }
   function updateProgress(values) {
     progresses.techdebt = progresses.techdebt + values[0];
     progresses.devhappiness = progresses.devhappiness + values[1];
     progresses.features = progresses.features + values[2];
     progresses.money = progresses.money + values[3];
-
+    gameOver()
     $('#indicator-techdebt').css('width', progresses.techdebt + '%');
     $('#indicator-devhappiness').css('width', progresses.devhappiness + '%');
     $('#indicator-features').css('width', progresses.features + '%');
@@ -93,8 +107,8 @@ $(function() {
         if(nextQuestionId < questions.length) {
           nextQuestion(questions);
         } else {
-          alert('No more questions!');
           $('#answer').hide();
+          alert('Your tenure ends after ' + nextQuestionId  + " days, your legacy is widely celebrated");
         }
 
         // Update progressbars
