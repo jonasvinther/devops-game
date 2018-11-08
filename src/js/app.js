@@ -14,8 +14,8 @@ $(function() {
     currentQuestion = questions[nextQuestionId];
 
     jQuery('#question').text(currentQuestion.question);
-
-    nextQuestionId++;
+    
+    nextQuestionId = Math.floor(Math.random() * questions.length);
   }
   nextQuestion(questions);
 

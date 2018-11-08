@@ -3,11 +3,11 @@ var questions = [
         "question": "We need to get this release out immediately. Should we skip the pipeline?",
         "answers": [
             {
-                "answer": "Yes sir!",
+                "answer": "That is a very bad idea",
                 "ratings": [-10,-5,5,10]
             }, 
             {
-                "answer": "No sir!",
+                "answer": "It is okay this time",
                 "ratings": [10,5,0,-10]
             }
         ]
@@ -16,11 +16,11 @@ var questions = [
         "question": "Should we spend the next sprint working on internal quality?",
         "answers": [
             {
-                "answer": "This is very important",
+                "answer": "Yes, it is a good long term investment",
                 "ratings": [10,10,-10,-10]
             }, 
             {
-                "answer": "Ain't nobody got time for that",
+                "answer": "Features are more important at the moment",
                 "ratings": [-10,-10,10,10]
             }
         ]
@@ -29,11 +29,11 @@ var questions = [
         "question": "Should we get an intern?",
         "answers": [
             {
-                "answer": "Sure",
+                "answer": "Yes, free labor rocks!",
                 "ratings": [-10,0,10,0]
             }, 
             {
-                "answer": "No way",
+                "answer": "We don't have time to teach them",
                 "ratings": [10,0,-10,0]
             }
         ]
@@ -46,7 +46,7 @@ var questions = [
                 "ratings": [15,-5,-5,-5]
             }, 
             {
-                "answer": "We do not have time for that",
+                "answer": "We have other issues right now",
                 "ratings": [-10,5,5,5]
             }
         ]
