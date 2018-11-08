@@ -1,6 +1,6 @@
 var questions = [
     {
-        "question": "We need to get this release out immediately. Skip the pipeline!",
+        "question": "We need to get this release out immediately. Should we skip the pipeline?",
         "answers": [
             {
                 "answer": "Yes sir!",
@@ -13,7 +13,7 @@ var questions = [
         ]
     },
     {
-        "question": "We should spend the next sprint working on internal quality",
+        "question": "Should we spend the next sprint working on internal quality?",
         "answers": [
             {
                 "answer": "This is very important",
@@ -26,7 +26,7 @@ var questions = [
         ]
     },
     {
-        "question": "We should get an intern to work on our code",
+        "question": "Should we get an intern?",
         "answers": [
             {
                 "answer": "Sure",
@@ -39,7 +39,7 @@ var questions = [
         ]
     },
     {
-        "question": "We should focus more on unittests",
+        "question": "Should we increase focus on unittests right now?",
         "answers": [
             {
                 "answer": "TDD should be in our DNA",
