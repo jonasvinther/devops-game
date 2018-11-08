@@ -3,6 +3,8 @@ import {questions} from './questions.js'
 
 $(function() {
 
+  $('#introductionModal').modal('show');
+
   var nextQuestionId = 0;
   var currentQuestion = null;
 
