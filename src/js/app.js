@@ -92,6 +92,7 @@ $(function() {
           nextQuestion(questions);
         } else {
           console.log('Game ended');
+          alert('No more questions!');
         }
 
         // Update progressbars
