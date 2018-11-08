@@ -1,53 +1,53 @@
 var questions = [
     {
-        "question": "Question number 1",
+        "question": "We need to get this release out immediately. Skip the pipeline!",
         "answers": [
             {
                 "answer": "Yes sir!",
-                "ratings": [7,5,-3,1]
+                "ratings": [-10,-5,5,10]
             }, 
             {
                 "answer": "No sir!",
-                "ratings": [-3,2,-7,-1]
+                "ratings": [10,5,0,-10]
             }
         ]
     },
     {
-        "question": "Question number 2",
+        "question": "We should spend the next sprint working on internal quality",
         "answers": [
             {
-                "answer": "All the things!",
-                "ratings": [7,5,-3,1]
+                "answer": "This is very important",
+                "ratings": [10,10,-10,-10]
             }, 
             {
-                "answer": "None!",
-                "ratings": [-3,2,-7,-1]
+                "answer": "Ain't nobody got time for that",
+                "ratings": [-10,-10,10,10]
             }
         ]
     },
     {
-        "question": "Question number 3",
+        "question": "We should get an intern to work on our code",
         "answers": [
             {
-                "answer": "No no no",
-                "ratings": [7,5,-3,1]
+                "answer": "Sure",
+                "ratings": [-10,0,10,0]
             }, 
             {
-                "answer": "YES!",
-                "ratings": [-3,2,-7,-1]
+                "answer": "No way",
+                "ratings": [10,0,-10,0]
             }
         ]
     },
     {
-        "question": "This is a bunch of extra text, how much text can I fit in here.\n how does newlines work. <br /> tags",
+        "question": "We should focus more on unittests",
         "answers": [
             {
-                "answer": "No no no",
-                "ratings": [7,5,-3,1]
+                "answer": "TDD should be in our DNA",
+                "ratings": [15,-5,-5,-5]
             }, 
             {
-                "answer": "YES!",
-                "ratings": [-3,2,-7,-1]
+                "answer": "We do not have time for that",
+                "ratings": [-10,5,5,5]
             }
         ]
     }
