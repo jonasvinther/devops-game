@@ -19,22 +19,22 @@ $(function() {
   nextQuestion(questions);
 
   var progresses = {
-    nature: 50,
-    human: 50,
-    strength: 50,
+    techdebt: 50,
+    devhappiness: 50,
+    features: 50,
     money: 50
 
   }
   function updateProgress(values) {
-    progresses.nature = progresses.nature + values[0];
-    progresses.human = progresses.human + values[1];
-    progresses.strength = progresses.strength + values[2];
+    progresses.techdebt = progresses.techdebt + values[0];
+    progresses.devhappiness = progresses.devhappiness + values[1];
+    progresses.features = progresses.features + values[2];
     progresses.money = progresses.money + values[3];
     console.log(progresses);
 
-    $('#indicator-nature').css('width', progresses.nature + '%');
-    $('#indicator-human').css('width', progresses.human + '%');
-    $('#indicator-strength  ').css('width', progresses.strength + '%');
+    $('#indicator-techdebt').css('width', progresses.techdebt + '%');
+    $('#indicator-devhappiness').css('width', progresses.devhappiness + '%');
+    $('#indicator-features').css('width', progresses.features + '%');
     $('#indicator-money').css('width', progresses.money + '%');
   }
 
