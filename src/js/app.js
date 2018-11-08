@@ -81,7 +81,7 @@ $(function() {
       ondrop: function (event) {
         event.relatedTarget.textContent = '';
         
-        var dropCenter = ($(window).width()/2) - ($(event.dragEvent.target).width()/2) - 15;
+        var dropCenter = $(window).width()/2 - $(event.dragEvent.target).width()/2 - 20;
         
         event.dragEvent.target.style.webkitTransform =
         event.dragEvent.target.style.transform =
@@ -93,8 +93,8 @@ $(function() {
         if(nextQuestionId < questions.length) {
           nextQuestion(questions);
         } else {
-          console.log('Game ended');
           alert('No more questions!');
+          $('#answer').hide();
         }
 
         // Update progressbars
