@@ -79,7 +79,7 @@ $(function() {
       ondrop: function (event) {
         event.relatedTarget.textContent = '';
         
-        var dropCenter = $(window).width()/2 - $(event.dragEvent.target).width()/2;
+        var dropCenter = ($(window).width()/2) - ($(event.dragEvent.target).width()/2) - 15;
         
         event.dragEvent.target.style.webkitTransform =
         event.dragEvent.target.style.transform =
