@@ -3,18 +3,15 @@ import {questions} from './questions.js'
 
 $(function() {
 
-  
-  console.log(questions);
-
-  var currentQuestionId = 0;
+  var nextQuestionId = 0;
   var currentQuestion = null;
 
   function nextQuestion(questions) {
-    currentQuestion = questions[currentQuestionId];
+    currentQuestion = questions[nextQuestionId];
 
     jQuery('#question').text(currentQuestion.question);
 
-    currentQuestionId++;
+    nextQuestionId++;
   }
   nextQuestion(questions);
 
@@ -91,7 +88,7 @@ $(function() {
         event.dragEvent.target.setAttribute('data-x', dropCenter);
         event.dragEvent.target.setAttribute('data-y', 0);
 
-        if(currentQuestionId < questions.length) {
+        if(nextQuestionId < questions.length) {
           nextQuestion(questions);
         } else {
           console.log('Game ended');
