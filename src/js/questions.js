@@ -4,11 +4,11 @@ var questions = [
         "answers": [
             {
                 "answer": "That is a very bad idea",
-                "ratings": [-10,-5,5,10]
+                "ratings": [-20,-10,10,20]
             }, 
             {
                 "answer": "It is okay this time",
-                "ratings": [10,5,0,-10]
+                "ratings": [20,10,0,-20]
             }
         ]
     },
@@ -17,11 +17,11 @@ var questions = [
         "answers": [
             {
                 "answer": "Yes, it is a good long term investment",
-                "ratings": [10,10,-10,-10]
+                "ratings": [20,20,-20,-20]
             }, 
             {
                 "answer": "Features are more important at the moment",
-                "ratings": [-10,-10,10,10]
+                "ratings": [-20,-20,20,20]
             }
         ]
     },
@@ -30,11 +30,11 @@ var questions = [
         "answers": [
             {
                 "answer": "Yes, free labor rocks!",
-                "ratings": [-10,0,10,0]
+                "ratings": [-20,0,20,0]
             }, 
             {
                 "answer": "We don't have time to teach them",
-                "ratings": [10,0,-10,0]
+                "ratings": [20,0,-20,0]
             }
         ]
     },
@@ -43,11 +43,11 @@ var questions = [
         "answers": [
             {
                 "answer": "TDD should be in our DNA",
-                "ratings": [15,-5,-5,-5]
+                "ratings": [30,-10,-10,-10]
             }, 
             {
                 "answer": "We have other issues right now",
-                "ratings": [-10,5,5,5]
+                "ratings": [-20,10,10,10]
             }
         ]
     }
