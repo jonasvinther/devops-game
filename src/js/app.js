@@ -29,13 +29,21 @@ $(function() {
   
   function gameOver() {
     if(progresses.techdebt < 1) {
-      alert("Technical debt has grown over time, preventing any meaninful progress onwards")
+      $('#endingModalBody').text('Technical debt has grown over time, preventing any meaninful progress onwards');
+      $('#answer').hide();
+      $('#endingModal').modal('show');
     } else if(progresses.devhappiness < 1) {
-      alert("Your developers has grown angry over time. You are left without any team")
+      $('#endingModalBody').text('Your developers has grown angry over time. You are left without any team');
+      $('#answer').hide();
+      $('#endingModal').modal('show');
     } else if(progresses.features < 1) {
-      alert("You no longer have relevant features. Your competition has outgrown you.")
+      $('#endingModalBody').text('You no longer have relevant features. Your competition has outgrown you.');
+      $('#answer').hide();
+      $('#endingModal').modal('show');
     } else if (progresses.money < 1) {
-      alert("Your team is out of funding.")
+      $('#endingModalBody').text('Your team is out of funding.');
+      $('#answer').hide();
+      $('#endingModal').modal('show');
     }
   }
   function updateProgress(values) {
@@ -107,9 +115,8 @@ $(function() {
         if(nextQuestionId < questions.length) {
           nextQuestion(questions);
         } else {
-          $('#answer').hide();
-          $('#endingModalBody').text('Your tenure ends after ' + nextQuestionId  + " days, your legacy is widely celebrated");
-          $('#endingModal').modal('show');
+          // $('#answer').hide();
+          // $('#endingModal').modal('show');
         }
 
         // Update progressbars
