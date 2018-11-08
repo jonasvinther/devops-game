@@ -108,7 +108,8 @@ $(function() {
           nextQuestion(questions);
         } else {
           $('#answer').hide();
-          alert('Your tenure ends after ' + nextQuestionId  + " days, your legacy is widely celebrated");
+          $('#endingModalBody').text('Your tenure ends after ' + nextQuestionId  + " days, your legacy is widely celebrated");
+          $('#endingModal').modal('show');
         }
 
         // Update progressbars

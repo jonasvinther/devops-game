@@ -118,11 +118,18 @@ html
       .modal-content
         .modal-header
           h5#exampleModalLabel.modal-title The DevOps game
-          button.close(type='button' data-dismiss='modal' aria-label='Close')
-            span(aria-hidden='true') &times;
         .modal-body 
           .p Welcome. We've been looking forward to you starting. 
           .p You are the new Agile Coach at ACME inc.
           .p We are in dire need of your advice!
         .modal-footer
-          button.btn.btn-secondary(type='button' data-dismiss='modal') Okay ...
+          button.btn.btn-primary(type='button' data-dismiss='modal') Okay ...
+
+  #endingModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true')
+    .modal-dialog(role='document')
+      .modal-content
+        .modal-header
+          h5#exampleModalLabel.modal-title The DevOps game
+        .modal-body#endingModalBody
+        .modal-footer
+          button.btn.btn-primary(type='button' data-dismiss='modal' onClick="window.location.reload()") Play again
