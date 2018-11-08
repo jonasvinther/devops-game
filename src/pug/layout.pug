@@ -1,0 +1,97 @@
+doctype html
+html
+  head
+    meta(name="viewport" content="width=device-width, initial-scale=1, width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no")
+
+    title= title
+
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous")
+
+    link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous")
+
+    script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js")
+
+    script(src="bundle.js")
+
+    style(type="text/css").
+      #question {
+        font-size: 24px;
+        text-align: center;
+      }
+
+      #answer {
+        width: 150px;
+        height: 150px;
+        background-color: #29e;
+        color: white;
+        border-radius: 20px;
+        position: relative;
+        text-align: center;
+        font-size: 18px;
+        z-index: 10;
+        user-select: none;
+        -webkit-transform: translate(0px, 0px);
+                transform: translate(0px, 0px);
+      }
+
+      .dropzone {
+        height: 100%;
+        width: 50%;
+        top: 0;
+        z-index: 1;
+        position: absolute;
+      }
+      .dropzone#left {
+        background-color: red;
+        left: 0;
+      }
+      .dropzone#right {
+        background-color: green;
+        right: 0;
+      }
+
+      .demo {
+        position: relative;
+        height: 300px;
+        width: 100%;
+      }
+      .demo * {
+        touch-action: none;
+      }
+
+      .indicator {
+        font-size: 44px;
+        text-align: center;
+        display: block;
+        margin: 25px 0;
+      }
+
+  body
+    .container-fluid
+      .row
+        .col
+          i.indicator.fas.fa-leaf
+          .progress
+            div(class="progress-bar" id="indicator-nature" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100")
+        .col
+          i.indicator.fas.fa-male
+          .progress
+            div(class="progress-bar" id="indicator-human" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100")
+        .col
+          i.indicator.fas.fa-dumbbell
+          .progress
+            div(class="progress-bar" id="indicator-strength" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100")
+        .col
+          i.indicator.fas.fa-dollar-sign
+          .progress
+            div(class="progress-bar" id="indicator-money" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100")
+      .row
+        .col
+          #question
+      .row
+        .col
+          .demo
+            div(id="answer" class="draggable drag-drop" data-x="200")
+
+            .dropzone#left
+            .dropzone#right
