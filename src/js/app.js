@@ -30,7 +30,6 @@ $(function() {
     progresses.human = progresses.human + values[1];
     progresses.strength = progresses.strength + values[2];
     progresses.money = progresses.money + values[3];
-    console.log(progresses);
 
     $('#indicator-nature').css('width', progresses.nature + '%');
     $('#indicator-human').css('width', progresses.human + '%');
@@ -65,11 +64,9 @@ $(function() {
         switch (zoneId) {
           case 'left':
             draggableElement.textContent = currentQuestion.answers[0].answer;
-            // updateProgress(currentQuestion.answers[0].ratings);
             break;
           case 'right':
             draggableElement.textContent = currentQuestion.answers[1].answer;
-            // updateProgress(currentQuestion.answers[1].ratings);
             break;
           default:
             draggableElement.textContent = '';
