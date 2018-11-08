@@ -7,15 +7,16 @@ $(function() {
 
   var nextQuestionId = 0;
   var currentQuestion = null;
-
+  var currentDay = 0;
 
   function nextQuestion(questions) {
     
     currentQuestion = questions[nextQuestionId];
 
     jQuery('#question').text(currentQuestion.question);
-    
+
     nextQuestionId = Math.floor(Math.random() * questions.length);
+    currentDay++;
   }
   nextQuestion(questions);
 
@@ -56,6 +57,7 @@ $(function() {
     $('#indicator-devhappiness').css('width', progresses.devhappiness + '%');
     $('#indicator-features').css('width', progresses.features + '%');
     $('#indicator-money').css('width', progresses.money + '%');
+    $('#indicator-days').text("You have kept the business running for " + currentDay + " days");
   }
 
 
