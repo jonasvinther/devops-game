@@ -37,6 +37,19 @@ var questions = [
                 "ratings": [-3,2,-7,-1]
             }
         ]
+    },
+    {
+        "question": "This is a bunch of extra text, how much text can I fit in here.\n how does newlines work. <br /> tags",
+        "answers": [
+            {
+                "answer": "No no no",
+                "ratings": [7,5,-3,1]
+            }, 
+            {
+                "answer": "YES!",
+                "ratings": [-3,2,-7,-1]
+            }
+        ]
     }
 ]
 
