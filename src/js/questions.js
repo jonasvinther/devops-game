@@ -50,6 +50,32 @@ var questions = [
                 "ratings": [-20,10,10,10]
             }
         ]
+    },
+    {
+        "question": "Production is down, we're bleeding money. Fix it!",
+        "answers": [
+            {
+                "answer": "We're on it!",
+                "ratings": [-20,-10,0,0]
+            }, 
+            {
+                "answer": "We're on it!",
+                "ratings": [-20,-10, 0, 0]
+            }
+        ]
+    },
+    {
+        "question": "Our budget was conservative, so we have some surplus funds",
+        "answers": [
+            {
+                "answer": "We should do a team day",
+                "ratings": [0,25,0,0]
+            }, 
+            {
+                "answer": "We need to build some reserve funds",
+                "ratings": [0,-10, 0, 25]
+            }
+        ]
     }
 ]
 
