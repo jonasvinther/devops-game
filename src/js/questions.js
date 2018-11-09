@@ -3,11 +3,11 @@ var questions = [
         "question": "We need to get this release out immediately. Should we skip the pipeline?",
         "answers": [
             {
-                "answer": "That is a very bad idea",
+                "answer": "It is okay this time",
                 "ratings": [-20,-10,10,20]
             }, 
             {
-                "answer": "It is okay this time",
+                "answer": "Never skip the pipeline",
                 "ratings": [20,10,0,-20]
             }
         ]
@@ -74,6 +74,19 @@ var questions = [
             {
                 "answer": "We need to build some reserve funds",
                 "ratings": [0,-10, 0, 25]
+            }
+        ]
+    },
+    {
+        "question": "The developers keep yapping about the cloud. What should we do?",
+        "answers": [
+            {
+                "answer": "Give them some credits",
+                "ratings": [0,15,0,-30]
+            }, 
+            {
+                "answer": "We can't run stuff in the cloud. Don't be silly.",
+                "ratings": [0,-20, 0, 0]
             }
         ]
     }
